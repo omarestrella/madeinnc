@@ -126,7 +126,20 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'web',
     'south',
+    'rest_framework',
 )
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'web.permissions.IsOwnerOrReadOnly',
+    ),
+    'PAGINATE_BY': 20
+}
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
