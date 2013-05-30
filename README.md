@@ -7,7 +7,7 @@ An open source web application and homepage for [Made In NC](http://madeinnc.org
 
 Feel free to open issues, fork, download, and use the source and app as you see fit.
 
-### License
+### MIT License
 
 Copyright (c) 2013 Omar Estrella
 
