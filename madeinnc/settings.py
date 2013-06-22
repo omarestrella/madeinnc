@@ -123,7 +123,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'web',
+    'api',
     'south',
     'rest_framework',
 )
@@ -134,7 +134,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'web.permissions.IsOwnerOrReadOnly',
+        'api.permissions.IsOwnerOrReadOnly',
     ),
     'PAGINATE_BY': 20
 }

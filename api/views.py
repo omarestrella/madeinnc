@@ -1,9 +1,9 @@
 from rest_framework import viewsets
 from rest_framework import permissions as rest_permissions
 
-from web import models
-from web import serializers
-from web import permissions
+from api import models
+from api import serializers
+from api import permissions
 
 
 class CompanyViewSet(viewsets.ModelViewSet):

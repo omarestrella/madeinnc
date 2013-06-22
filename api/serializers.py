@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from web import models
+from api import models
 
 
 class UserListingField(serializers.RelatedField):
