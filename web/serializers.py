@@ -13,4 +13,4 @@ class CompanySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.Company
-        fields = ('owner', 'name', 'url', 'description', 'authorized',)
+        fields = ('id', 'owner', 'name', 'url', 'description', 'authorized',)

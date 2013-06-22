@@ -10,3 +10,7 @@ router.register(r'companies', views.CompanyViewSet)
 urlpatterns = patterns('',
     url(r'^api/', include(router.urls))
 )
+
+urlpatterns += patterns('',
+    url(r'^auth/', include('rest_framework.urls', namespace='rest_framework')),
+)
